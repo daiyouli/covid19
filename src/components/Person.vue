@@ -15,14 +15,18 @@ export default {
 </script>
 
 <script lang="ts" setup>
-let name = '张三'
-let age = 18
+import { ref } from 'vue'
+let name = ref('张三')
+let age = ref(18)
 let tel = '1233546678'
+let address = 'shanghaijinqinyuan'
+console.log(name)
+console.log(address)
 function changeName() {
-  name = 'daiyouli'
+  name.value = 'daiyouli'
 }
 function changeAge() {
-  age += 1
+  age.value += 1
 }
 function showTel() {
   alert(tel)
