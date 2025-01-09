@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'node:url'
 import { mergeConfig, defineConfig, configDefaults } from 'vitest/config'
 import viteConfig from './vite.config'
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 
 export default mergeConfig(
   viteConfig,

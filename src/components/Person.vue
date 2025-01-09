@@ -11,21 +11,21 @@
 <script lang="ts">
 export default {
   name: 'Person',
-  setup() {
-    let name = '张三'
-    let age = 18
-    let tel = '1233546678'
-    function changeName() {
-      name = 'daiyouli'
-    }
-    function changeAge() {
-      age += 1
-    }
-    function showTel() {
-      alert(tel)
-    }
-    return { name, age, changeName, changeAge, showTel }
-  },
+}
+</script>
+
+<script lang="ts" setup>
+let name = '张三'
+let age = 18
+let tel = '1233546678'
+function changeName() {
+  name = 'daiyouli'
+}
+function changeAge() {
+  age += 1
+}
+function showTel() {
+  alert(tel)
 }
 </script>
 
